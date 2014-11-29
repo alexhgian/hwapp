@@ -1,0 +1,4 @@
+<form role="form"> <div class="form-group"> <label for="exampleInputPassword1">Enter Your API Key</label> <input type="text" class="form-control" id="apikeyInput" placeholder="Your API key" ng-model="apiKey"> <br> <pre>Encoded: {{encodedStr}}</pre> <div class="form-group"> <button type="submit" ng-click="getB64Encode(apiKey)" class="btn btn-default">Set Key</button> </div> </div> </form> <hr> <div class="form-group"> <button type="submit" ng-click="getProducts()" class="btn btn-default">Set Key</button> </div> <pre> {{productData}} </pre> <table class="table table-striped"> <tr> <td>ProductID <td>VariantID <td>StockID  <tr ng-repeat="prod in products"> <td>  </table> <hr> <pre>{{myHeaders | json}}</pre> <!-- <div class="form-group">
+  <label for="exampleInputEmail1">Email address</label>
+  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+</div> -->
